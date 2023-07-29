@@ -4,7 +4,7 @@ function Item({ name, category }) {
   const [cartState, setCartState] = useState(false);
   const [buttonState, setButtonState] = useState(false);
   const isInCart = cartState ? "in-cart" : "";
-  const isButton = buttonState ? "Add to Cart" : "Remove From Cart";
+  const isButton = buttonState ? "Remove From Cart" : "Add to Cart" ;
   return (
     <li className={isInCart}>
       <span>{name}</span>
